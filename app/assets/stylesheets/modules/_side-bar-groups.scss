@@ -1,0 +1,23 @@
+.side-bar-groups{
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    padding: 20px 20px;
+  
+
+    .list{
+      height: 65px;
+      width: 100%;
+      margin-bottom: 40px;
+
+      &__group-name{
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 15px;
+      }
+      &__group-message{
+        font-size: 11px;
+
+      }
+
+    }
+  }
