@@ -7,21 +7,20 @@
       height: 65px;
       width: 100%;
       margin-bottom: 40px;
-      text-decoration: none;
+
+      .link{
+        text-decoration: none;
+        color: white;
+      }
 
       &__group-name{
         width: 100%;
         margin-bottom: 5px;
         font-size: 15px;
       }
-
+      
       &__group-message{
         font-size: 11px;
       }
     }
-  }
-
-  .link {
-    text-decoration: none;
-    color: white;
   }

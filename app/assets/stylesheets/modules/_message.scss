@@ -3,22 +3,22 @@
   height: calc(100vh - 190px);
   padding: 35px 40px;
   
-  &__info{
+  .info{
     padding-bottom: 12px;
     display: flex;
     
 
-    &__taker{
+    .taker{
       font-size: 16px;
       color: #333333;
     }
-    &__date{
+    .date{
       font-size: 12px;
       color: #999999;
       margin-left: 10px;
     }
   }
-  &__text{
+  .text{
     font-size: 14px;
     color: #434a54;
     padding-bottom: 46px;

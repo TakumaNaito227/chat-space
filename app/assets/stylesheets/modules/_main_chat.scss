@@ -11,20 +11,20 @@
     display: flex;
     justify-content: space-between;
 
-    &__left-box{
+    .left-box{
       margin-top: 35px;
 
-      &__group-name{
+      .group-name{
         color: #333333;
         font-size: 20px;
         padding-bottom: 5px;
       }
-      &__group-member{
+      .group-member{
         color: #999999;
         font-size: 12px;
       }
     }
-    &__edit-btn{
+    .edit-btn{
       font-size: 16px;
       margin-top: 28px;
       height: 40px;

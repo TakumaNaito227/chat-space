@@ -9,22 +9,25 @@
     align-items: center;
     padding: 0 20px;
   
-    &__box{
+    .box{
       height: 20px;
       width: 100%;
       font-size: 16px;
       display: flex;
       justify-content: space-between;
-        &__icon{
+        .icon{
           display: flex;
           a{
             color: #ffffff;
             text-decoration: none;
           }
-        &__group{
+        .group{
           a{
             margin-right: 5px;
           }
+        }
+        .edit{
+          margin-top: 5px;
         }
       }
     }

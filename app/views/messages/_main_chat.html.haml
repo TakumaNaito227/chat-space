@@ -1,34 +1,24 @@
 .main_chat
   .header
-    .header__left-box
-      %h2.header__left-box__group-name
-        TEST
-      %ul.header__left-box__group-member
-        Member:name
-    .header__edit-btn
+    .left-box
+      .group-name
+        = @group.name
+      .group-member
+        Member : 
+        - @group.users.each do |user|
+          = user.name
+    .edit-btn
       = link_to 'edit', '#'
 
-  .message
-    .message__info
-      %p.message__info__taker
-        name
-      %P.message__info__date
-        20200412
-    .message__text
-      Hello World!!
-    .message__info
-      %p.message__info__taker
-        name2
-      %P.message__info__date
-        20200413
-    .message__text
-      Hello World2!!
+  .messages
+  = render @messages
 
   .footer
-    %form.new-message
-      .input-box
-        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
-        %label{class: "input-box__image"}
-          = icon('fas', 'image')
-          %input{type: "file", class: "input-box__image__file"}
-      %input{type: "submit", class: "submit-btn"}
+    = form_for [@group, @message] do |f|
+      .input
+        = f.text_field :content, class: 'text', placeholder: 'type a message'
+        .image
+          = f.label :image, class: 'image2' do
+            = icon('fas', 'image', class: 'icon')
+            = f.file_field :image, class: 'file'
+        = f.submit 'Send', class: 'submit-btn'
