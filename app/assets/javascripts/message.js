@@ -43,12 +43,7 @@ $('#new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action')
-  
-<<<<<<< Updated upstream
-=======
-    // $('#submit.btn').removeAttr('data-disable-with');
->>>>>>> Stashed changes
-
+    
     $.ajax({
       url: url,
       type: "POST",
