@@ -1,5 +1,6 @@
 .messages {
   height: calc(100vh - 190px);
+  overflow: scroll;
 
   .message{
     background-color: #fafafa;
